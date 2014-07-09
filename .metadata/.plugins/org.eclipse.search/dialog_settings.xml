@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<section name="org.eclipse.jdt.ui.JavaSearchResultPage">
+	<section name="">
 		<item value="TRUE" key="org.eclipse.jdt.search.resultpage.limit_enabled"/>
 		<item value="1000" key="org.eclipse.jdt.search.resultpage.limit"/>
 	</section>
-	<section name="">
-		<item value="1000" key="org.eclipse.search.resultpage.limit"/>
+	<section name="org.eclipse.jdt.ui.JavaSearchResultPage">
 		<item value="TRUE" key="org.eclipse.jdt.search.resultpage.limit_enabled"/>
 		<item value="1000" key="org.eclipse.jdt.search.resultpage.limit"/>
 	</section>
@@ -40,10 +39,10 @@
 		<item value="false" key="CASE_SENSITIVE"/>
 		<item value="false" key="REG_EX_SEARCH"/>
 		<item value="false" key="SEARCH_DERIVED"/>
-		<item value="6" key="HISTORY_SIZE"/>
+		<item value="7" key="HISTORY_SIZE"/>
 		<section name="HISTORY2">
 			<item value="false" key="isRegExSearch"/>
-			<item value="gridView" key="textPattern"/>
+			<item value="imageThumbUrls" key="textPattern"/>
 			<item value="1" key="scope"/>
 			<item value="true" key="ignoreCase"/>
 			<list key="fileNamePatterns">
@@ -57,7 +56,7 @@
 		</section>
 		<section name="HISTORY3">
 			<item value="false" key="isRegExSearch"/>
-			<item value="folder" key="textPattern"/>
+			<item value="gridView" key="textPattern"/>
 			<item value="1" key="scope"/>
 			<item value="true" key="ignoreCase"/>
 			<list key="fileNamePatterns">
@@ -68,7 +67,7 @@
 		</section>
 		<section name="HISTORY0">
 			<item value="false" key="isRegExSearch"/>
-			<item value="query" key="textPattern"/>
+			<item value="motion" key="textPattern"/>
 			<item value="1" key="scope"/>
 			<item value="true" key="ignoreCase"/>
 			<list key="fileNamePatterns">
@@ -79,7 +78,7 @@
 		</section>
 		<section name="HISTORY1">
 			<item value="false" key="isRegExSearch"/>
-			<item value="imageThumbUrls" key="textPattern"/>
+			<item value="query" key="textPattern"/>
 			<item value="1" key="scope"/>
 			<item value="true" key="ignoreCase"/>
 			<list key="fileNamePatterns">
@@ -90,7 +89,7 @@
 		</section>
 		<section name="HISTORY5">
 			<item value="false" key="isRegExSearch"/>
-			<item value="/IllegalBlockSizeException.class&quot;:" key="textPattern"/>
+			<item value="crypto" key="textPattern"/>
 			<item value="1" key="scope"/>
 			<item value="true" key="ignoreCase"/>
 			<list key="fileNamePatterns">
@@ -101,7 +100,18 @@
 		</section>
 		<section name="HISTORY4">
 			<item value="false" key="isRegExSearch"/>
-			<item value="crypto" key="textPattern"/>
+			<item value="folder" key="textPattern"/>
+			<item value="1" key="scope"/>
+			<item value="true" key="ignoreCase"/>
+			<list key="fileNamePatterns">
+				<item value="*"/>
+			</list>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY6">
+			<item value="false" key="isRegExSearch"/>
+			<item value="/IllegalBlockSizeException.class&quot;:" key="textPattern"/>
 			<item value="1" key="scope"/>
 			<item value="true" key="ignoreCase"/>
 			<list key="fileNamePatterns">

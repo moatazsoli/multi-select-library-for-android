@@ -208,7 +208,7 @@ public class CustomGalleryActivity
   
   @Override
   public void onBackPressed() {
-	 
+		    overridePendingTransition(R.anim.anim_in_right, R.anim.anim_out_right);  
 	      if (CustomGalleryActivity.this.currentDirectory.size() > 1)
 	      {
 	        int index = CustomGalleryActivity.this.currentDirectory.size() - 1;

@@ -13,16 +13,16 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="Adapter" key="selection"/>
+		<item value="onConn" key="selection"/>
 		<list key="findhistory">
-			<item value="adapter"/>
-			<item value="adaptor"/>
-			<item value="check"/>
-			<item value="checkmarkBitmap"/>
-			<item value="checkmarkDrawable"/>
-			<item value="mul"/>
-			<item value="mReusableBitmaps"/>
-			<item value="all_path"/>
+			<item value="onconn"/>
+			<item value="mUpdatesRequested"/>
+			<item value="connectAndStartLocationUpdates"/>
+			<item value="onconnected"/>
+			<item value="connectan"/>
+			<item value="connect"/>
+			<item value="GONE"/>
+			<item value="new load"/>
 		</list>
 		<list key="replacehistory">
 		</list>

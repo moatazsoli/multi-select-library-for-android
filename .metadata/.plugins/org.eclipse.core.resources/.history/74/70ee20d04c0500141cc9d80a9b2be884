@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.moataz.picshake"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcherorange"
+        android:label="@string/app_name"
+        android:theme="@style/CustomActionBarTheme" >
+        <activity
+            android:name="com.moataz.picshake.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.moataz.picshake.SenderActivity"
+            android:label="@string/title_activity_sender"
+            android:parentActivityName="com.moataz.picshake.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.moataz.picshake.MainActivity" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.moataz.picshake.ReceiverActivity"
+            android:label="@string/title_activity_receiver"
+            android:parentActivityName="com.moataz.picshake.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.moataz.picshake.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.moataz.picshake.Splashscreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.luminous.pick.CustomGalleryActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="luminous.ACTION_PICK" />
+                <action android:name="luminous.ACTION_MULTIPLE_PICK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.moataz.picshake.SigninPage"
+            android:label="@string/title_activity_signin_page" >
+        </activity>
+        <activity
+            android:name="com.moataz.picshake.SignupPage"
+            android:label="@string/title_activity_signup_page" >
+        </activity>
+        <activity
+            android:name="com.moataz.picshake.List"
+            android:label="@string/title_activity_list" >
+        </activity>
+        
+        <activity android:name=".ui.ImageGridActivity"
+                  android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name=".ui.ImageDetailActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".ui.ImageGridActivity"
+            android:theme="@style/AppThemeDark.FullScreen" >
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ImageGridActivity" />
+        </activity>
+        
+    </application>
+
+</manifest>
